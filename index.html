@@ -51,7 +51,7 @@ Released under the MIT and GPL (version 2 or later) Licenses.
    </div>
    <!-- 3 -->
    <div id="problem" class="step slide" data-x="2000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-               <div class="speechbubble"><p>I don't know what to search for, and when I get the answer back, I don't know what it means!</div>
+               <h1>I don't know what to search for, and when I get the answer back, I don't know what it means!</h1>
    </div>
    <!-- 4 -->
    <div id="emizar" class="step slide" data-x="2000" data-y="1000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
@@ -63,7 +63,7 @@ Released under the MIT and GPL (version 2 or later) Licenses.
            <ul>
                <li>Has 20 Slides</li>
                <li>Is for a five minute talk</li>
-               <li>has been going for <span id="time">00</span></li> 
+               <li>has <p style="display:inline" id="timer">00</p> left</li> 
                <li>is written in html5 and javascript</li>
            </ul>
    </div>
@@ -73,7 +73,7 @@ Released under the MIT and GPL (version 2 or later) Licenses.
    </div>
    
    <!-- 7 -->
-   <div id="hashSarcasmStats" class="step slide" data-x="3000" data-y="1000" data-z="-1000" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+   <div id="hashSarcasmStats" class="step slide" data-x="3000" data-y="1000" data-z="-2000" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
        <div id="sentiment">
             <p>Positive</p>
             <p>Negative</p>
@@ -87,12 +87,14 @@ Released under the MIT and GPL (version 2 or later) Licenses.
        <p id="riastats">5,634,896 words <br />spanning over 489 articles<br /> in 25 volumes <br /> from 1800-1899</p>
    </div>
    <!-- 9 -->
-   <div id="RIAFindings" class="step slide" data-x="3000" data-y="2000" data-z="-1000" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+   <div id="RIAFindings" class="step slide" data-x="3000" data-y="2000" data-z="-2000" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
        <pre>        
-            dreams mind dream theory waking law 
-            operation reason ideas thought nature
-            objects sleep ordinary wholly rev 
-            cases idea combination</pre>
+ dreams mind dream theory waking law 
+ operation reason ideas thought nature
+ objects sleep ordinary wholly rev 
+ cases idea combination
+ </pre>
+       <br />
     <ul>
         <li>Extract the linguistic text from the articles</li>
         <li>Applicability of modern tools? (Spell Checking)</li>
@@ -101,15 +103,16 @@ Released under the MIT and GPL (version 2 or later) Licenses.
    </div>
    <!-- 10 -->
    <div id="sitForwardLeanBack" class="step slide" data-x="4000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-      <!-- Sit Forward becomes LeanBack --> 
+       <a href="http://www.flickr.com/photos/fod/201259829/"><img src="img/sitforward.jpg" /></a>
+       <a href="http://www.rgbstock.com/photo/mlCuDfU/sofa"><img src="img/leanback.jpg" /></a>
    </div>
    <!-- 11 -->
    <div id="wikipedia" class="step slide" data-x="4000" data-y="1000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-       <a href="http://en.wikipedia.org/Bangalore" target="wiki"><img alt="wikipedia screenshot" title="article and underlying view" src="img/wikiscreen.jpg" /></a> 
+       <a href="http://en.wikipedia.org/Bangalore" target="wiki"><img alt="wikipedia screenshot" title="article and underlying view" src="img/wiki.png" /></a> 
    </div>
    <!-- 12 -->
    <div id="yodle" class="step slide" data-x="4000" data-y="2000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-       <a href="http://kdeg.scss.tcd.ie/yodle" target="yodle"><img alt="yodle Screenshot" title="Yodle" src="img/yodlescreen.jpg" /></a>
+       <a href="http://kdeg.scss.tcd.ie/yodle" target="yodle"><img alt="yodle Screenshot" title="Yodle" src="img/yodle.png" /></a>
    </div>
    <!-- 13 -->
    <div id="Cendari" class="step slide" data-x="4000" data-y="3000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
@@ -121,12 +124,12 @@ Released under the MIT and GPL (version 2 or later) Licenses.
        </ul>
    </div>
    <!-- 14 -->
-   <div id="CendariExpand" class="step slide" data-x="4000" data-y="3000" data-z="-1000" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
+   <div id="CendariExpand" class="step slide" data-x="4000" data-y="3000" data-z="-2000" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
        <h1>Use semantic reasoning to make queries from a question</h1> 
        <ul>
            <!-- TODO: Add dbpedia URL here -->
-           <li>List <span id="unitExpand">{divisions, companies, gruppen}</span> engaged near <span id="breslauExpand"><a href="http://dbpedia.org/">Breslau</a></span> in <span id="yr17Expand">{^^XSD:Date:1917-1-1, ^^XSD:Date:1917-12-31}</span></li>
-           <li>Order the works of <span id="LlulExpand">Raymond Llull</span> by <span id="certaintyExpand">{'','',<span class="strike">''</span>}</span>, then by <span id="degreeExpand">{# of topics with scientific tag}</span></li>
+           <li>List <span id="unitExpand">{divisions, companies}</span> engaged near <span id="breslauExpand"><a href="http://live.dbpedia.org/page/Wroc%C5%82aw">http://live.dbpedia.org/page/Wroc%C5%82aw</a></span> in <span id="yr17Expand">{^^XSD:Date:1917-1-1, ^^XSD:Date:1917-12-31}</span></li>
+           <li>Order the works of <span id="LlulExpand">Raymond Llull</span> by <span id="certaintyExpand">{'Raymondus Llullus','Raymond Llull',<del>'il Dottore'</del>}</span>, then by <span id="degreeExpand">{# of topics with scientific tag}</span></li>
        </ul>
    </div>
    <!-- 15 -->
@@ -139,28 +142,36 @@ Released under the MIT and GPL (version 2 or later) Licenses.
    </div>
    <!-- 16 -->
    <div id="approaches" class="step slide" data-x="-1000" data-y="1000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-       Data Cleaning, Knowledge Modelling, Content Analysis beyond the keywords
+       <ul>
+           <li>Data Cleaning</li>
+           <li>Knowledge Modelling</li>
+           <li> Content Analysis beyond the keywords</li>
+       </ul>
       
    </div>
    <!-- 17 -->
    <div id="technologies" class="step slide" data-x="-1000" data-y="2000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-       Web, Semantics, Machine Learning
+       <ul>
+           <li> Web </li>
+           <li> Semantics </li>
+           <li> Machine Learning </li>
+       </ul>
       
    </div>
    <!-- 18 -->
    <div id="engagement" class="step slide" data-x="-1000" data-y="3000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-     Try a technique on new content, a new technique on old content, or experiment with different users 
+       <h1>Try a technique on new content, a new technique on old content, or experiment with different users</h1>
    </div>
    <!-- 19 -->
    <div id="questions" class="step slide" data-x="1000" data-y="2000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
        <div id="left">
-           Hard for computers<br /><em>but not too hard</em>
+           Hard for computers<br /><em>(but not too hard)</em>
        </div>
        <div id="mid">
-           Hard for Humans<br /><em>slow, laborious but defined</em>
+           Hard for Humans<br /><em>(slow, laborious but defined)</em>
        </div>
        <div id="right">
-           Interesting<br /><em>enough for there to be data, and people to interpret the result</em>
+           Interesting<br /><em>(enough for there to be data, and people to interpret the result)</em>
        </div> 
    </div>
    <!-- 20 -->
@@ -168,7 +179,8 @@ Released under the MIT and GPL (version 2 or later) Licenses.
        <h1>What story can we tell together?</h1> 
    </div>    
    <!-- keep an overview slide -->
-   <div id="overview" class="step" data-x="1400" data-y="2000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="6">
+   <div id="overview" class="step" data-x="1400" data-y="1400" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="6">
+
 
    </div>
 
@@ -186,6 +198,6 @@ if ("ontouchstart" in document.documentElement) {
 <script src="js/impress.js"></script>
 <script src="js/autoadvance.js"></script>
 <script>impress().init();</script>
-<script>//timerInit();</script>
+<script>timerInit();</script>
 </body>
 </html>

@@ -11,16 +11,12 @@ function timer(time,update) {
 
 function timerInit(){
     timer(
-        5400000, // milliseconds
+        5 * 60 * 1000, // milliseconds
         function(timeleft) { // called every step to update the visible countdown
             hours = timeleft / 3600;
             mins = (timeleft  / 60) % 60;
             sec = timeleft  % 60;
             document.getElementById('timer').innerHTML = Math.floor(hours) + ":" + Math.floor(mins) + ":" + sec;
-            if (timeleft % 5 == 0){
-                console.log('ding!');
-                impress().next();
-            }
         });
 }
 
