@@ -17,6 +17,7 @@ Released under the MIT and GPL (version 2 or later) Licenses.
    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
    <link href="css/impress-base.css" rel="stylesheet" />
+   <link href="css/india.css" rel="stylesheet" />
    
    <link rel="shortcut icon" href="img/favicon.png" />
    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
@@ -41,7 +42,7 @@ Released under the MIT and GPL (version 2 or later) Licenses.
    
    <!-- 1 -->
    <div id="steganography" class="step slide" data-x="1000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-       <img src="" />
+       <a href="http://dl.ub.uni-freiburg.de/diglit/trithemius1606/0007?sid=ec5f7cbb7fee8497b9711535a0d61b9d"><img src="img/steganography.jpg" /></a>
    </div>
    <!-- 2 -->
    <div id="itMeansHiddenMessage" class="step slide" data-x="1000" data-y="0" data-z="-1000" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
@@ -68,20 +69,35 @@ Released under the MIT and GPL (version 2 or later) Licenses.
    </div>
    <!-- 6 -->
    <div id="hashSarcasm" class="step slide" data-x="3000" data-y="1000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-      <!-- todo: Example sarcastic tweet -->
+    <img alt="hashSarcasm" title="examples of Sarcarm" src="img/twitter.png" />
    </div>
    
    <!-- 7 -->
    <div id="hashSarcasmStats" class="step slide" data-x="3000" data-y="1000" data-z="-1000" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-           <!-- get stats from Sam's Thesis --> 
+       <div id="sentiment">
+            <p>Positive</p>
+            <p>Negative</p>
+            <p>Sarcastic</p>
+       </div>
+       <p id="kappa">Human Annotation: Cohen's &Kappa; ~ 0.6</p>
    </div>
    <!-- 8 -->
    <div id="RIA" class="step slide" data-x="3000" data-y="2000" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-   
+       <img src="img/tria.png" alt="example article" title="example article" />
+       <p id="riastats">5,634,896 words <br />spanning over 489 articles<br /> in 25 volumes <br /> from 1800-1899</p>
    </div>
    <!-- 9 -->
    <div id="RIAFindings" class="step slide" data-x="3000" data-y="2000" data-z="-1000" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
-       <!-- Todo: Get Stats from the DH abstract --> 
+       <pre>        
+            dreams mind dream theory waking law 
+            operation reason ideas thought nature
+            objects sleep ordinary wholly rev 
+            cases idea combination</pre>
+    <ul>
+        <li>Extract the linguistic text from the articles</li>
+        <li>Applicability of modern tools? (Spell Checking)</li>
+        <li>Stability of the Topics?</li>
+    </ul>
    </div>
    <!-- 10 -->
    <div id="sitForwardLeanBack" class="step slide" data-x="4000" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1">
@@ -157,7 +173,7 @@ Released under the MIT and GPL (version 2 or later) Licenses.
    </div>
 
 </div>
-<div id="timer"></div>
+<p id="timer"></p>
 <div class="hint">
    <p>Use a spacebar or arrow keys to navigate</p>
 </div>
@@ -170,6 +186,6 @@ if ("ontouchstart" in document.documentElement) {
 <script src="js/impress.js"></script>
 <script src="js/autoadvance.js"></script>
 <script>impress().init();</script>
-<script>timerInit();</script>
+<script>//timerInit();</script>
 </body>
 </html>
