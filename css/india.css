@@ -63,6 +63,7 @@ pre {
 #sitForwardLeanBack img{
     max-height: 100%;
     max-width: 50%;
+    margin: auto;
 }
 
 #technologies ul, #approaches ul {
